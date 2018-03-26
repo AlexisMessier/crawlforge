@@ -21,6 +21,10 @@ a:active {
     opacity: 0.6;
 }
 
+.align-center {
+    text-align: center;
+}
+
 
 /* <--------------- Navbar ---------------> */
 .navbar {
@@ -50,6 +54,50 @@ a:active {
     margin-left: auto;
 }
 
+
+/* <--------------- Content ---------------> */
 .header {
     margin-top: 60px;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    color: #424242;
+    background: url(/note.svg);
+}
+
+.button {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: #f1eee5;
+    font-size: 1.5rem;
+    background: url(/button.svg);
+}
+
+.button:focus,
+.button:hover,
+.button:active {
+    text-decoration: none;
+}
+
+/* <--------------- Grid ---------------> */
+.grid {
+    margin: 0 auto;
+    max-width: 91rem;
+    font-size: 0;
+}
+
+.column {
+    display: inline-block;
+    width: 33.33%;
+    overflow: hidden;
+    font-size: 1rem;
+    vertical-align: text-top;
+}
+
+@media (max-width: 600px) { 
+    .column {
+        width: 100%;
+    }
 }
