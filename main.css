@@ -81,11 +81,25 @@ a:active {
     max-width: 90rem;
 }
 
-.card {
+.note1 {
     margin: 1rem;
     padding: 1rem 2rem;
     color: #424242;
-    background: url(/note.svg);
+    background: url(/note1.svg);
+}
+
+.note2 {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    color: #424242;
+    background: url(/note2.svg);
+}
+
+.note3 {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    color: #424242;
+    background: url(/note3.svg);
 }
 
 
