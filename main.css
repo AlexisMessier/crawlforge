@@ -25,6 +25,11 @@ a:active {
     text-align: center;
 }
 
+.icon {
+    height: 50px;
+    width: auto;
+}
+
 
 /* <--------------- Button ---------------> */
 .button {
@@ -81,24 +86,21 @@ a:active {
     max-width: 90rem;
 }
 
-.note1 {
+.note {
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 2rem 1.5rem 1rem;
     color: #424242;
+}
+
+.note1 {
     background: url(/note1.svg);
 }
 
 .note2 {
-    margin: 1rem;
-    padding: 1rem 2rem;
-    color: #424242;
     background: url(/note2.svg);
 }
 
 .note3 {
-    margin: 1rem;
-    padding: 1rem 2rem;
-    color: #424242;
     background: url(/note3.svg);
 }
 
