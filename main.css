@@ -14,21 +14,28 @@ a {
     opacity: 1;
 }
 
-a:focus,
-a:hover,
-a:active {
+.link:focus,
+.link:hover,
+.link:active {
     text-decoration: underline;
     opacity: 0.6;
-}
-
-.align-center {
-    text-align: center;
 }
 
 .icon {
     height: 50px;
     margin: 5px auto;
     width: auto;
+}
+
+.icon:focus,
+.icon:hover,
+.icon:active {
+    opacity: 1;
+    filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
+}
+
+.align-center {
+    text-align: center;
 }
 
 
@@ -57,7 +64,7 @@ a:active {
     right: 0;
     width: 100%;
     z-index: 100;
-    background: url(/navbar.svg) repeat-x 0 0/auto 100%;
+    background: url(/navbar.svg) repeat-x -1rem 0px/auto 100%
 }
 
 .navbar-content {
@@ -93,21 +100,36 @@ a:active {
     margin: 1rem;
     padding: 2rem 1.5rem 1rem;
     color: #424242;
+    background-color: #f1eee5;
+    mask-size: 100% 100%;
+}
+
+.note:focus,
+.note:hover,
+.note:active {
+    background-color: #fff;
+}
+
+
+.note:focus .icon,
+.note:hover .icon,
+.note:active .icon {
+    filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
 }
 
 .note1 {
-    background: url(/note1.svg);
-    background-size: 100% 100%;
+    -webkit-mask-image: url(/note1.svg);
+    mask-image: url(/note1.svg);
 }
 
 .note2 {
-    background: url(/note2.svg);
-    background-size: 100% 100%;
+    -webkit-mask-image: url(/note2.svg);
+    mask-image: url(/note2.svg);
 }
 
 .note3 {
-    background: url(/note3.svg);
-    background-size: 100% 100%;
+    -webkit-mask-image: url(/note3.svg);
+    mask-image: url(/note3.svg);
 }
 
 
