@@ -130,8 +130,15 @@ a {
 
 /* <--------------- Content ---------------> */
 .header {
-    margin: 60px auto 0;
-    padding: 5rem 0;
+    margin: 50px auto 0;
+    padding: 110px 0 100px;
+    background: url(/banner.svg);
+    background-size: auto 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 1rem 0;
 }
 
 .content {
@@ -154,11 +161,16 @@ a {
     background-color: #fff;
 }
 
-
 .note:focus .icon,
 .note:hover .icon,
 .note:active .icon {
     filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
+}
+
+.note:focus .separation,
+.note:hover .separation,
+.note:active .separation {
+    background-color: #349da1;
 }
 
 .note1 {
@@ -181,9 +193,9 @@ a {
 }
 
 .separation {
-    -webkit-mask-image: url(/pattern.svg);
-    mask-image: url(/pattern.svg);
-    background-color: #349da1;
+    -webkit-mask-image: url(/pattern1.svg);
+    mask-image: url(/pattern1.svg);
+    background-color: #424242;
     height: 25px;
     width: 100%;
 }
