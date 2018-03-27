@@ -7,6 +7,31 @@ body {
     color: #f1eee5;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+
 a {
     color: #349da1;
     text-decoration: none;
@@ -53,6 +78,11 @@ a {
 .button:hover,
 .button:active {
     text-decoration: none;
+    opacity: 0.6;
+}
+
+.pricing .button {
+    padding: 1.5rem;
 }
 
 
@@ -64,7 +94,8 @@ a {
     right: 0;
     width: 100%;
     z-index: 100;
-    background: url(/navbar.svg) repeat-x -1rem 0px/auto 100%
+    background: url(/navbar.svg) repeat-x -1rem 0px/auto 100%;
+    filter: drop-shadow(0.4rem 0.4rem 0.3rem #111);
 }
 
 .navbar-content {
@@ -77,6 +108,18 @@ a {
 
 .navbar-element {
     margin: auto 0;
+}
+
+.company {
+    color: #424242;
+    font-weight: 700;
+    padding: 0 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar .link {
+    padding: 0 0 0 2rem;
+    font-size: 1.2rem;
 }
 
 .navbar-right {
@@ -152,4 +195,27 @@ a {
     .column {
         width: 100%;
     }
+}
+
+
+/* <--------------- Common Footer ---------------> */
+.footer {
+    width: 100%;
+    background: url(/footer.svg) repeat-x -1rem 0px/auto 100%;
+    color: #424242;
+}
+
+.footer ul {
+    margin: 0 1rem 1rem 0;
+}
+
+.footer li {
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.footer-content {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem;
 }
