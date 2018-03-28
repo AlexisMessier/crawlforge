@@ -166,7 +166,7 @@ a {
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 
@@ -177,6 +177,10 @@ a {
     color: #424242;
     background-color: #f1eee5;
     mask-size: 100% 100%;
+}
+
+.note .note {
+    background-color: transparent;
 }
 
 .note:focus,
