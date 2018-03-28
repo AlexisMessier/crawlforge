@@ -144,16 +144,19 @@ a {
     background-size: auto 100%;
 }
 
-.background1 {
+.background {
     margin: 0 auto;
     padding: 100px 0;
+}
+
+.background1 {
     background: url(/wood.svg);
-    background-size: auto 100%;
+    background-size: auto 100%;    
 }
 
 .container-fluid {
     width: 100%;
-    padding: 1rem 0;
+    padding: 100px 0;
 }
 
 .content {
@@ -162,6 +165,12 @@ a {
     max-width: 70rem;
 }
 
+.section {
+    padding: 2rem 0;
+}
+
+
+/* <--------------- Notes ---------------> */
 .note {
     margin: 1rem;
     padding: 2rem 1.5rem 1rem;
@@ -228,7 +237,6 @@ a {
     width: 100%;
     height: 30px;
     margin-top: -115px;
-    margin-bottom: 100px;
 }
 
 .separation2 {
@@ -236,6 +244,15 @@ a {
     width: 100%;
     height: 30px;
     margin-top: -15px;
+}
+
+.big-note {
+    margin: 1rem auto 0;
+    max-width: 50rem;
+}
+
+.big-note .button {
+    padding: 1rem;
 }
 
 
@@ -261,21 +278,6 @@ a {
 }
 
 
-/* <--------------- Pricing ---------------> */
-.pricing {
-    margin: 3rem auto;
-    max-width: 50rem;
-}
-
-.pricing .separation {
-    background-color: #424242;
-}
-
-.pricing .button {
-    padding: 1.5rem;
-}
-
-
 /* <--------------- Footer ---------------> */
 .footer {
     width: 100%;
@@ -289,7 +291,12 @@ a {
 }
 
 .footer h3 {
+    color: #424242;
     margin: 0;
+}
+
+.footer a h3:hover {
+    text-decoration: underline;
 }
 
 .footer ul {
