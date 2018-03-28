@@ -11,12 +11,14 @@ h1 {
     font-weight: 900;
     font-size: 2.8rem;
     line-height: 2.8rem;
+    text-shadow: 0.2rem 0.2rem 2rem #111;
 }
 
 h2 {
     font-weight: 800;
     font-size: 2.2rem;
     line-height: 2.2rem;
+    text-shadow: 0.2rem 0.2rem 2rem #111;
 }
 
 h3 {
@@ -154,6 +156,11 @@ a {
     background-size: auto 100%;    
 }
 
+.background2 {
+    background: url(/gears.svg);
+    background-size: auto 100%;    
+}
+
 .container-fluid {
     width: 100%;
     padding: 100px 0;
@@ -243,13 +250,6 @@ a {
     margin-top: -115px;
 }
 
-.separation2 {
-    background: url(/separation2.svg) repeat-x 0 0/auto 100%;
-    width: 100%;
-    height: 30px;
-    margin-top: -15px;
-}
-
 .big-note {
     margin: 1rem auto 0;
     max-width: 50rem;
@@ -288,6 +288,8 @@ a {
     background: url(/footer.svg) repeat-x -1rem 0px/auto 100%;
     color: #424242;
     padding: 2rem 0 1rem;
+    margin-top: -15px;
+    filter: drop-shadow(0.4rem -0.4rem 0.3rem #111);
 }
 
 .footer .separation {
