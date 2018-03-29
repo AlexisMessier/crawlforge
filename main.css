@@ -161,11 +161,6 @@ a {
     background-size: auto 100%;    
 }
 
-.container-fluid {
-    width: 100%;
-    padding: 100px 0;
-}
-
 .content {
     margin: 0 auto;
     padding: 1rem;
@@ -221,6 +216,21 @@ a {
 .note3 {
     -webkit-mask-image: url(/images/note3.svg);
     mask-image: url(/images/note3.svg);
+}
+
+.big-note1 {
+    -webkit-mask-image: url(/images/big-note1.svg);
+    mask-image: url(/images/big-note1.svg);
+}
+
+.big-note2 {
+    -webkit-mask-image: url(/images/big-note2.svg);
+    mask-image: url(/images/big-note2.svg);
+}
+
+.big-note3 {
+    -webkit-mask-image: url(/images/big-note3.svg);
+    mask-image: url(/images/big-note3.svg);
 }
 
 .note h3 {
