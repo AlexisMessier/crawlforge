@@ -9,28 +9,28 @@ body {
 
 h1 {
     font-weight: 900;
-    font-size: 2.8rem;
-    line-height: 2.8rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-shadow: 0.2rem 0.2rem 2rem #111;
 }
 
 h2 {
     font-weight: 800;
-    font-size: 2.2rem;
-    line-height: 2.2rem;
+    font-size: 3rem;
+    line-height: 3rem;
     text-shadow: 0.2rem 0.2rem 2rem #111;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
     margin: 0;
 }
 
 p {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
 }
 
@@ -174,6 +174,11 @@ a {
     background-size: auto 100%;    
 }
 
+.background3 {
+    background: url(/images/marble.svg);
+    background-size: auto 100%;    
+}
+
 .content {
     margin: 0 auto;
     padding: 1rem;
@@ -272,7 +277,7 @@ a {
 
 .big-note {
     margin: 1rem auto 0;
-    max-width: 50rem;
+    max-width: 60rem;
 }
 
 .big-note .button {
