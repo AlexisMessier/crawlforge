@@ -212,20 +212,22 @@ a {
     mask-size: 100% 100%;
 }
 
-.note .note {
-    background-color: transparent;
-}
-
-.note:focus,
-.note:hover,
-.note:active {
-    background-color: #fff;
-}
-
-.note:focus .icon,
-.note:hover .icon,
-.note:active .icon {
+.column:focus .icon,
+.column:hover .icon,
+.column:active .icon {
     filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
+}
+
+.column:focus h2,
+.column:hover h2,
+.column:active h2 {
+    color: #329b9f;
+}
+
+.column:focus h3,
+.column:hover h3,
+.column:active h3 {
+    color: #329b9f;
 }
 
 .note:focus .separation,
