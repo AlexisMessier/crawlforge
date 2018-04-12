@@ -328,10 +328,6 @@ a {
     text-decoration: underline;
 }
 
-.footer ul {
-    margin: 1.5rem 1rem 1rem 0;
-}
-
 .footer li {
     list-style-type: none;
     line-height: 1.5rem;
