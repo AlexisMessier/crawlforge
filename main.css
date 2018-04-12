@@ -237,33 +237,18 @@ a {
 }
 
 .note1 {
-    -webkit-mask-image: url(/images/note1.svg);
-    mask-image: url(/images/note1.svg);
+    background: url(/images/big-note1.svg);
+    background-size: auto 100%;
 }
 
 .note2 {
-    -webkit-mask-image: url(/images/note2.svg);
-    mask-image: url(/images/note2.svg);
+    background: url(/images/big-note2.svg);
+    background-size: auto 100%;
 }
 
 .note3 {
-    -webkit-mask-image: url(/images/note3.svg);
-    mask-image: url(/images/note3.svg);
-}
-
-.big-note1 {
-    -webkit-mask-image: url(/images/big-note1.svg);
-    mask-image: url(/images/big-note1.svg);
-}
-
-.big-note2 {
-    -webkit-mask-image: url(/images/big-note2.svg);
-    mask-image: url(/images/big-note2.svg);
-}
-
-.big-note3 {
-    -webkit-mask-image: url(/images/big-note3.svg);
-    mask-image: url(/images/big-note3.svg);
+    background: url(/images/big-note3.svg);
+    background-size: auto 100%;
 }
 
 .note-title .icon {
@@ -324,6 +309,12 @@ a {
     filter: drop-shadow(0.4rem -0.4rem 0.3rem #111);
 }
 
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 .footer .separation {
     background-color: #424242;
 }
@@ -349,10 +340,4 @@ a {
 .footer img {
     height: 25px;
     margin: 0 0.5rem 0 0;
-}
-
-.footer-content {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 1rem;
 }
