@@ -1,40 +1,53 @@
+/* <--------------- Common ---------------> */
+/* :root {
+    --dark-turquoise-color: #00585E;
+    --turquoise-color: #329B9F;
+    --white-color: #fff;
+    --skull-color: #F5F2DC;
+    --black-color: #111;
+    --light-black-color: #454445;
+    --fiery-color: #FF5729;
+} */
+
 body {
     z-index: 0;
     padding: 0;
     margin: 0;
     width: 100%;
-    background: #0b1e24 linear-gradient(90deg,#010d0b 0,#0b1e24 25%,#0b1e24 75%,#010d0b) repeat-y;
-    color: #f1eee5;
+    background: #454445 linear-gradient(90deg,#010d0b 0,#454445 25%,#454445 75%,#010d0b) repeat-y;
+    color: #fff;
 }
 
 ::selection {
     color: #fff;
-    background: #329b9f;
+    background: #329B9F;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #329b9f;
+    background: #329B9F;
 }
 
 h1 {
     font-weight: 900;
     font-size: 3.5rem;
     line-height: 3.5rem;
-    text-shadow: 0.2rem 0.2rem 2rem #111;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 h2 {
     font-weight: 800;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     margin: 1rem 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 h3 {
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.6rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 p {
@@ -55,7 +68,7 @@ a {
 .link:hover,
 .link:active {
     text-decoration: underline;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .icon {
@@ -69,7 +82,12 @@ a {
 .icon:hover,
 .icon:active {
     opacity: 1;
-    filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
+    filter: drop-shadow(0.4rem 0.4rem 0.3rem #454445);
+}
+
+.screenshot {
+    margin: 1.5rem 0;
+    width: 100%;
 }
 
 .align-center {
@@ -85,7 +103,7 @@ a {
 .button {
     text-align: center;
     padding: 0.5rem 1rem;
-    color: #f1eee5;
+    color: #fff;
     font-size: 1.2rem;
     background: url(/images/button.svg);
     background-size: 100% 100%;
@@ -95,7 +113,7 @@ a {
 .button:hover,
 .button:active {
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .big-button {
@@ -111,8 +129,8 @@ a {
     right: 0;
     width: 100%;
     z-index: 100;
-    background: url(/images/navbar.svg) repeat-x -1rem 0px/auto 100%;
-    filter: drop-shadow(0.4rem 0.4rem 0.3rem #111);
+    background: url(/images/stone.jpg);
+    box-shadow: 0 0.2rem 0.3rem #111;
 }
 
 .navbar .icon {
@@ -132,8 +150,20 @@ a {
     margin: auto 0;
 }
 
+.navbar .link {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.navbar .link:focus,
+.navbar .link:hover,
+.navbar .link:active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
 .company {
-    color: #424242;
+    color: #fff;
     font-weight: 700;
     margin: 19px 0;
     padding: 0 0 0 0.5rem;
@@ -156,7 +186,7 @@ a {
     margin: 11px 0 11px auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .navbar .link {
         display: none;
     }
@@ -165,11 +195,10 @@ a {
 
 /* <--------------- Content ---------------> */
 .header {
-    margin: 50px auto 0;
+    margin: 60px auto 0;
     padding: 80px 0;
     background: url(/images/banner.svg);
     background-size: auto 100%;
-    text-shadow: 0.2rem 0.2rem 2rem #111;
 }
 
 .background {
@@ -178,18 +207,7 @@ a {
 }
 
 .background1 {
-    background: url(/images/wood.svg);
-    background-size: auto 100%;    
-}
-
-.background2 {
-    background: url(/images/gears.svg);
-    background-size: auto 100%;    
-}
-
-.background3 {
-    background: url(/images/.svg);
-    background-size: auto 100%;    
+    background: url(/images/stone.jpg);
 }
 
 .content {
@@ -207,15 +225,15 @@ a {
 .note {
     margin: 1rem;
     padding: 2rem 1rem 1rem;
-    color: #424242;
-    background-color: #f1eee5;
+    color: #454445;
+    background-color: #F5F2DC;
     mask-size: 100% 100%;
 }
 
 .column:focus .icon,
 .column:hover .icon,
 .column:active .icon {
-    filter: drop-shadow(0.4rem 0.4rem 0.3rem #424242);
+    filter: drop-shadow(0.4rem 0.4rem 0.3rem #454445);
 }
 
 .column:focus h2,
@@ -237,17 +255,20 @@ a {
 }
 
 .note1 {
-    background: url(/images/big-note1.svg);
+    -webkit-mask-image: url(/images/big-note1.svg);
+    mask-image: url(/images/big-note1.svg);
     background-size: auto 100%;
 }
 
 .note2 {
-    background: url(/images/big-note2.svg);
+    -webkit-mask-image: url(/images/big-note2.svg);
+    mask-image: url(/images/big-note2.svg);
     background-size: auto 100%;
 }
 
 .note3 {
-    background: url(/images/big-note3.svg);
+    -webkit-mask-image: url(/images/big-note3.svg);
+    mask-image: url(/images/big-note3.svg);
     background-size: auto 100%;
 }
 
@@ -262,7 +283,7 @@ a {
 .separation {
     -webkit-mask-image: url(/images/pattern1.svg);
     mask-image: url(/images/pattern1.svg);
-    background-color: #424242;
+    background-color: #454445;
     height: 25px;
     width: 100%;
     margin: 0.5rem 0;
@@ -298,14 +319,26 @@ a {
     }
 }
 
+.column1 {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    font-size: 1rem;
+    vertical-align: text-top;
+}
+
+@media (max-width: 900px) { 
+    .column1 {
+        width: 100%;
+    }
+}
+
 
 /* <--------------- Footer ---------------> */
 .footer {
     width: 100%;
-    background: url(/images/footer.svg) repeat-x -1rem 0px/auto 100%;
-    color: #424242;
-    padding: 2rem 0 1rem;
-    margin-top: -15px;
+    background: url(/images/stone.jpg);
+    color: #fff;
     filter: drop-shadow(0.4rem -0.4rem 0.3rem #111);
 }
 
@@ -315,12 +348,8 @@ a {
     padding: 1rem;
 }
 
-.footer .separation {
-    background-color: #424242;
-}
-
 .footer h3 {
-    color: #424242;
+    color: #fff;
     margin: 0 0 1rem 0;
 }
 
